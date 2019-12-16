@@ -1,0 +1,16 @@
+{
+  "name": "state-machines",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Marcus Lyons <marcus.a.lyons@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^3.0.13"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "resolutions": {
+    "mdx-deck/**/gatsby": "2.18.4"
+  }
+}

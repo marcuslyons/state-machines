@@ -1,0 +1,71 @@
+import { prism, swiss } from "mdx-deck/themes";
+export const themes = [prism, swiss];
+
+# Using Finite State Machines in UI Development
+
+### - Marcus Lyons
+
+---
+
+## What is a State Machine?
+
+A mathematical model of computation that describes the behavior of a system that
+can be in only one state at any given time.
+
+---
+
+### The Five Parts of a State Machine
+
+1. A finite number of **states**
+2. A finite number of **events**
+3. An **initial state**
+4. A **transition function** that determines the next state given the current
+   state and event
+5. A (possibly empty) set of **final states**
+
+---
+
+## Finite Number of States
+
+ex. idle, loading, failure, success
+
+---
+
+## Finite Number of Events
+
+ex. fetch data, resolve, reject, retry
+
+---
+
+## Initial State
+
+ex. idle, waiting for user input
+
+---
+
+## Transition Function
+
+Typically handled by the state machine to determine what state we're in after an
+event happens.
+
+---
+
+## Final States
+
+Not always present. The component could just go back to the idle state on
+resolution ready to be used again.
+
+---
+
+## Example App
+
+[Loading as a boolean](https://codesandbox.io/s/amazing-shockley-50qr2)
+
+---
+
+### References / Resources
+
+[State Machines Conceps - xstate docs](https://xstate.js.org/docs/about/concepts.html#finite-state-machines)<br/>
+[State Charts Academic Article](https://www.inf.ed.ac.uk/teaching/courses/seoc/2005_2006/resources/statecharts.pdf)<br/>
+[Disabling a button is not app logic](https://dev.to/davidkpiano/no-disabling-a-button-is-not-app-logic-598i)<br/>
+[Podcast Interview with xstate author](http://www.fullstackradio.com/130)
